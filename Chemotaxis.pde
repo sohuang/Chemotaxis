@@ -27,8 +27,10 @@ class Bacteria
 	}
 
 	void move() {
-		myX += (int)(Math.random() * 10) - 5;
-		myY += (int)(Math.random() * 10) - 5;
+		// if (frameCount % 5 == 0) {
+			myX += (int)(Math.random() * 6) - 3;
+			myY += (int)(Math.random() * 6) - 3;
+		// }
 	}
 
 	void show() {
