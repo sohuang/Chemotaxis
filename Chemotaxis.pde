@@ -8,7 +8,7 @@ int CREAM = color(242, 229, 182);
 int[] colorArray = {LAVEN, FLUSH, DRAIN, GREEN, CREAM};
 
 void setup() {
-	size(400, 400);
+	size(200, 200);
 	background(255);
 	for (int i = 0; i < colony.length; i++) {
 		colony[i] = new Bacteria(width / 2, height / 2, colorArray[(int)(Math.random() * colorArray.length)]);
@@ -16,7 +16,9 @@ void setup() {
 }
 
 void draw() {
-	// background(255);
+	fill(255, 255, 255, 15);
+	noStroke();
+	rect(0, 0, width, height);
 	for (Bacteria bacteria : colony) {
 		bacteria.move();
 		bacteria.show();
