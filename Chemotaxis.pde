@@ -14,9 +14,6 @@ void setup() {
   for (int i = 0; i < colony.length; i++) {
     colony[i] = new Bacteria(width / 2, height / 2, colorArray[(int)(Math.random() * colorArray.length)]);
   }
-  for (int i = 0; i < wordArray.length; i++) {
-    wordArray[i] = new Word("frog");
-  }
 }
 
 void draw() {
@@ -28,8 +25,9 @@ void draw() {
     bacteria.move();
     bacteria.show();
   }
-  for (Word word : wordArray) {
-    word.show();
+  for (int i = 0; i < wordArray.length; i++) {
+    wordArray[i] = new Word("frog");
+    wordArray[i].show();
   }
 }
 
