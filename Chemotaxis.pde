@@ -7,7 +7,7 @@ int GREEN = color(201, 217, 139);
 int CREAM = color(242, 229, 182);
 int[] colorArray = {LAVEN, FLUSH, DRAIN, GREEN, CREAM};
 int[] numWords = 10;
-Words[] wordArray = new Words[numWords];
+Word[] wordArray = new Word[numWords];
 
 void setup() {
   size(400, 300);
@@ -16,7 +16,7 @@ void setup() {
     colony[i] = new Bacteria(width / 2, height / 2, colorArray[(int)(Math.random() * colorArray.length)]);
   }
   for (int i = 0; i < wordArray.length; i++) {
-    wordArray[i] = new Words();
+    wordArray[i] = new Word();
   }
 }
 
@@ -80,9 +80,9 @@ class Bacteria {
   }
 }
 
-class Words() {
+class Word() {
   int myX, myY;
-  Words() {
+  Word() {
     myX = (int)(Math.random() * width);
     myY = (int)(Math.random() * height);
   }
