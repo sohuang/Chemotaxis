@@ -74,3 +74,18 @@ class Bacteria {
     arc(myX, myY, 15, 10, 0, PI);
   }
 }
+
+class Words() {
+  int myX, myY;
+  Words() {
+    myX = (int)(Math.random() * width);
+    myY = (int)(Math.random() * height);
+  }
+  
+  void show() {
+    fill(0);
+    if (frameCount % 20 == 0) {
+      text("front", myX, myY);
+    }
+  }
+}
