@@ -86,7 +86,7 @@ class Word {
   
   void show() {
     fill(0);
-    if (frameCount % 20 == 0) {
+    if (frameCount % 5 <= 2) {
       text("frog", myX, myY);
     }
   }
