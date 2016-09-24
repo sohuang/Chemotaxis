@@ -75,7 +75,7 @@ class Bacteria {
   }
 }
 
-class Word() {
+class Word {
   int myX, myY;
   Word() {
     myX = (int)(Math.random() * width);
