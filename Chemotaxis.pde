@@ -24,9 +24,11 @@ void draw() {
     bacteria.move();
     bacteria.show();
   }
-  Word word = new Word();
-  if (!(frameCount % 5 == 0))
-  word.show();
+  
+  if (!(frameCount % 5 == 0)) {
+    Word word = new Word();
+    word.show();
+  }
 }
 
 class Bacteria {
