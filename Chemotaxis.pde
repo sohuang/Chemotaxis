@@ -16,10 +16,10 @@ void setup() {
 }
 
 void draw() {
-  //background(255);
-  fill(230, 240, 250, 15);
-  noStroke();
-  rect(0, 0, width, height);
+  background(255);
+  // fill(230, 240, 250, 15);
+  // noStroke();
+  // rect(0, 0, width, height);
   for (Bacteria bacteria : colony) {
     bacteria.move();
     bacteria.show();
