@@ -6,12 +6,16 @@ int DRAIN = color(184, 212, 200);
 int GREEN = color(201, 217, 139);
 int CREAM = color(242, 229, 182);
 int[] colorArray = {LAVEN, FLUSH, DRAIN, GREEN, CREAM};
+Word[] wordArray = new Word[5];
 
 void setup() {
   size(400, 300);
   background(220, 230, 240);
   for (int i = 0; i < colony.length; i++) {
     colony[i] = new Bacteria(width / 2, height / 2, colorArray[(int)(Math.random() * colorArray.length)]);
+  }
+  for (int i = 0; i < wordArray.length; i++) {
+    wordArray[i] = new Word("frog");
   }
 }
 
@@ -24,9 +28,7 @@ void draw() {
     bacteria.move();
     bacteria.show();
   }
-  
-  if (frameCount % 5 == 0) {
-    Word word = new Word();
+  for (Word word : wordArray) {
     word.show();
   }
 }
@@ -81,14 +83,15 @@ class Bacteria {
 }
 
 class Word {
-  int myX, myY;
-  Word() {
+  int myX, myY, myS;
+  Word(String s) {
     myX = (int)(Math.random() * width - 20);
     myY = (int)(Math.random() * height - 10);
+    myS = s;
   }
   
   void show() {
     fill(0);
-    text("frog", myX, myY);
+    text(myS, myX, myY);
   }
 }
