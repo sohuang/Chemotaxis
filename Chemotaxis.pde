@@ -24,6 +24,8 @@ void draw() {
     bacteria.move();
     bacteria.show();
   }
+  Word word = new Word();
+  word.show();
 }
 
 class Bacteria {
@@ -78,14 +80,14 @@ class Bacteria {
 class Word {
   int myX, myY;
   Word() {
-    myX = (int)(Math.random() * width);
-    myY = (int)(Math.random() * height);
+    myX = (int)(Math.random() * width - 20);
+    myY = (int)(Math.random() * height - 10);
   }
   
   void show() {
     fill(0);
     if (frameCount % 20 == 0) {
-      text("front", myX, myY);
+      text("frog", myX, myY);
     }
   }
 }
