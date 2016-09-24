@@ -16,7 +16,7 @@ void setup() {
 }
 
 void draw() {
-  background(255);
+  background(220, 230, 240);
   // fill(230, 240, 250, 15);
   // noStroke();
   // rect(0, 0, width, height);
