@@ -19,3 +19,8 @@ footer {
 	font-style: italic;
 	font-size: 90%;
 }
+
+@font-face {
+	font-family: comic;
+	src: url("COMIC.TTF");
+}
