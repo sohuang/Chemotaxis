@@ -1,4 +1,4 @@
-int numBacteria = 50;
+int numBacteria = 15;
 Bacteria[] colony = new Bacteria[numBacteria];
 int LAVEN = color(200, 180, 230);
 int FLUSH = color(161, 176, 201);
