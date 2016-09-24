@@ -9,7 +9,7 @@ int[] colorArray = {LAVEN, FLUSH, DRAIN, GREEN, CREAM};
 
 void setup() {
 	size(200, 200);
-	background(255);
+	background(245, 245, 245);
 	for (int i = 0; i < colony.length; i++) {
 		colony[i] = new Bacteria(width / 2, height / 2, colorArray[(int)(Math.random() * colorArray.length)]);
 	}
