@@ -25,7 +25,7 @@ void draw() {
     bacteria.show();
   }
   
-  if (!(frameCount % 5 == 0)) {
+  if (frameCount % 5 == 0) {
     Word word = new Word();
     word.show();
   }
